@@ -1,0 +1,12 @@
+default:
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      method: oauth
+      project: my-project-lab1-497719
+      dataset: dwh
+      threads: 1
+      timeout_seconds: 300
+      location: EU
+      priority: interactive

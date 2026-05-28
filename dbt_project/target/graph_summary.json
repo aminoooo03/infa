@@ -1,0 +1,1 @@
+{"_invocation_id": "eb9bd0eb-8765-4bbc-80a2-171ed5dd5e32", "linked": {"0": {"name": "model.recommendations.top_products", "type": "model"}, "1": {"name": "model.recommendations.popular_products", "type": "model", "succ": [0]}}}

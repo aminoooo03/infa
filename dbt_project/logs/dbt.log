@@ -1,0 +1,312 @@
+[0m21:41:16.000660 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bdf70805f40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bdf6e01b800>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bdf6de2c380>]}
+
+
+============================== 21:41:16.005744 | 0f6ab478-0b3e-4ccc-99e6-a38a5d43c127 ==============================
+[0m21:41:16.005744 [info ] [MainThread]: Running with dbt=1.11.11
+[0m21:41:16.007158 [debug] [MainThread]: running dbt with arguments {'log_path': '/home/nakovaamina3/dbt_project/logs', 'log_cache_events': 'False', 'version_check': 'True', 'printer_width': '80', 'write_json': 'True', 'fail_fast': 'False', 'warn_error': 'None', 'indirect_selection': 'eager', 'profiles_dir': '/home/nakovaamina3/.dbt', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'introspect': 'True', 'quiet': 'False', 'empty': 'False', 'static_parser': 'True', 'partial_parse': 'True', 'debug': 'False', 'no_print': 'None', 'use_colors': 'True', 'log_format': 'default', 'cache_selected_only': 'False', 'use_experimental_parser': 'False', 'invocation_command': 'dbt run', 'send_anonymous_usage_stats': 'True', 'target_path': 'None'}
+[0m21:41:18.409820 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '0f6ab478-0b3e-4ccc-99e6-a38a5d43c127', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bdf590832c0>]}
+[0m21:41:18.514860 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '0f6ab478-0b3e-4ccc-99e6-a38a5d43c127', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bdf6e04b380>]}
+[0m21:41:18.516091 [info ] [MainThread]: Registered adapter: bigquery=1.11.1
+[0m21:41:18.741759 [debug] [MainThread]: checksum: 30a8cc8fdcbf66701b0944d4ccce3fa46dd04b61e5df68b9f16d57b2e0e3f0be, vars: {}, profile: , target: , version: 1.11.11
+[0m21:41:18.742927 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m21:41:18.743689 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '0f6ab478-0b3e-4ccc-99e6-a38a5d43c127', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bdf59082000>]}
+[0m21:41:20.378133 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '0f6ab478-0b3e-4ccc-99e6-a38a5d43c127', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bdf58b56600>]}
+[0m21:41:20.628768 [debug] [MainThread]: Wrote artifact WritableManifest to /home/nakovaamina3/dbt_project/target/manifest.json
+[0m21:41:20.631750 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/nakovaamina3/dbt_project/target/semantic_manifest.json
+[0m21:41:20.645147 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '0f6ab478-0b3e-4ccc-99e6-a38a5d43c127', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bdf58b30d70>]}
+[0m21:41:20.645904 [info ] [MainThread]: Found 2 models, 549 macros
+[0m21:41:20.646680 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '0f6ab478-0b3e-4ccc-99e6-a38a5d43c127', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bdf5880ad50>]}
+[0m21:41:20.649888 [info ] [MainThread]: 
+[0m21:41:20.650714 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m21:41:20.651844 [info ] [MainThread]: 
+[0m21:41:20.653453 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m21:41:20.659588 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_my-project-lab1-497719'
+[0m21:41:20.660473 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m21:41:22.266335 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_my-project-lab1-497719, now list_my-project-lab1-497719_dwh)
+[0m21:41:22.267594 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m21:41:22.475900 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '0f6ab478-0b3e-4ccc-99e6-a38a5d43c127', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bdf7014a510>]}
+[0m21:41:22.476972 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m21:41:22.485739 [debug] [Thread-1 (]: Began running node model.recommendations.popular_products
+[0m21:41:22.486860 [info ] [Thread-1 (]: 1 of 2 START sql table model dwh.popular_products .............................. [RUN]
+[0m21:41:22.488279 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_my-project-lab1-497719_dwh, now model.recommendations.popular_products)
+[0m21:41:22.489391 [debug] [Thread-1 (]: Began compiling node model.recommendations.popular_products
+[0m21:41:22.499649 [debug] [Thread-1 (]: Writing injected SQL for node "model.recommendations.popular_products"
+[0m21:41:22.500808 [debug] [Thread-1 (]: Began executing node model.recommendations.popular_products
+[0m21:41:22.562621 [debug] [Thread-1 (]: Writing runtime sql for node "model.recommendations.popular_products"
+[0m21:41:22.563966 [debug] [Thread-1 (]: On model.recommendations.popular_products: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "default", "target_name": "dev", "node_id": "model.recommendations.popular_products"} */
+
+  
+    
+
+    create or replace table `my-project-lab1-497719`.`dwh`.`popular_products`
+      
+    
+    
+
+    
+    OPTIONS()
+    as (
+      
+SELECT product_id, COUNT(*) as click_count
+FROM `my-project-lab1-497719.raw.clicks`
+GROUP BY product_id
+    );
+  
+[0m21:41:22.564847 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m21:41:23.049171 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=my-project-lab1-497719&j=bq:US:4f6f0d88-fe1b-46c0-81c9-3250115ec93f&page=queryresults
+[0m21:41:23.050367 [error] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=my-project-lab1-497719&j=bq:US:4f6f0d88-fe1b-46c0-81c9-3250115ec93f&page=queryresults
+[0m21:41:23.064349 [debug] [Thread-1 (]: Database Error in model popular_products (models/popular_products.sql)
+  Not found: Dataset my-project-lab1-497719:dwh was not found in location US
+  compiled code at target/run/recommendations/models/popular_products.sql
+[0m21:41:23.067152 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '0f6ab478-0b3e-4ccc-99e6-a38a5d43c127', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bdf58b6b2f0>]}
+[0m21:41:23.068572 [error] [Thread-1 (]: 1 of 2 ERROR creating sql table model dwh.popular_products ..................... [[31mERROR[0m in 0.58s]
+[0m21:41:23.070072 [debug] [Thread-1 (]: Finished running node model.recommendations.popular_products
+[0m21:41:23.071838 [debug] [Thread-4 (]: Marking all children of 'model.recommendations.popular_products' to be skipped because of status 'error'.  Reason: Database Error in model popular_products (models/popular_products.sql)
+  Not found: Dataset my-project-lab1-497719:dwh was not found in location US
+  compiled code at target/run/recommendations/models/popular_products.sql.
+[0m21:41:23.076742 [debug] [Thread-1 (]: Began running node model.recommendations.top_products
+[0m21:41:23.078126 [info ] [Thread-1 (]: 2 of 2 SKIP relation dwh.top_products .......................................... [[33mSKIP[0m]
+[0m21:41:23.080154 [debug] [Thread-1 (]: Finished running node model.recommendations.top_products
+[0m21:41:23.082531 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m21:41:23.083531 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m21:41:23.084014 [debug] [MainThread]: Connection 'model.recommendations.popular_products' was properly closed.
+[0m21:41:23.084690 [info ] [MainThread]: 
+[0m21:41:23.085443 [info ] [MainThread]: Finished running 2 table models in 0 hours 0 minutes and 2.43 seconds (2.43s).
+[0m21:41:23.087016 [debug] [MainThread]: Command end result
+[0m21:41:23.128032 [debug] [MainThread]: Wrote artifact WritableManifest to /home/nakovaamina3/dbt_project/target/manifest.json
+[0m21:41:23.131348 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/nakovaamina3/dbt_project/target/semantic_manifest.json
+[0m21:41:23.140450 [debug] [MainThread]: Wrote artifact RunExecutionResult to /home/nakovaamina3/dbt_project/target/run_results.json
+[0m21:41:23.141042 [info ] [MainThread]: 
+[0m21:41:23.141918 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m21:41:23.143094 [info ] [MainThread]: 
+[0m21:41:23.144488 [error] [MainThread]: [31mFailure in model popular_products (models/popular_products.sql)[0m
+[0m21:41:23.145890 [error] [MainThread]:   Database Error in model popular_products (models/popular_products.sql)
+  Not found: Dataset my-project-lab1-497719:dwh was not found in location US
+  compiled code at target/run/recommendations/models/popular_products.sql
+[0m21:41:23.146823 [info ] [MainThread]: 
+[0m21:41:23.148167 [info ] [MainThread]:   compiled code at target/compiled/recommendations/models/popular_products.sql
+[0m21:41:23.149116 [info ] [MainThread]: 
+[0m21:41:23.150229 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=1 NO-OP=0 TOTAL=2
+[0m21:41:23.151817 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 7.241285, "process_in_blocks": "1720", "process_kernel_time": 0.615616, "process_mem_max_rss": "232236", "process_out_blocks": "3544", "process_user_time": 6.982877}
+[0m21:41:23.152651 [debug] [MainThread]: Command `dbt run` failed at 21:41:23.152494 after 7.24 seconds
+[0m21:41:23.153323 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bdf6d7bea20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bdf5a3bbf20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bdf6de2e120>]}
+[0m21:41:23.153940 [debug] [MainThread]: Flushing usage events
+[0m21:41:23.605661 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m21:42:42.305161 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e0e718fd970>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e0e73406840>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e0e71c03920>]}
+
+
+============================== 21:42:42.310671 | e4a42785-924b-48c7-bb14-b74d73b7ca71 ==============================
+[0m21:42:42.310671 [info ] [MainThread]: Running with dbt=1.11.11
+[0m21:42:42.311959 [debug] [MainThread]: running dbt with arguments {'use_colors': 'True', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'version_check': 'True', 'partial_parse': 'True', 'printer_width': '80', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'quiet': 'False', 'target_path': 'None', 'send_anonymous_usage_stats': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'fail_fast': 'False', 'log_format': 'default', 'empty': 'False', 'debug': 'False', 'warn_error': 'None', 'write_json': 'True', 'log_path': '/home/nakovaamina3/dbt_project/logs', 'profiles_dir': '/home/nakovaamina3/.dbt', 'invocation_command': 'dbt run', 'cache_selected_only': 'False'}
+[0m21:42:44.644631 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'e4a42785-924b-48c7-bb14-b74d73b7ca71', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e0e5c8d2570>]}
+[0m21:42:44.749120 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'e4a42785-924b-48c7-bb14-b74d73b7ca71', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e0e5cc92090>]}
+[0m21:42:44.750203 [info ] [MainThread]: Registered adapter: bigquery=1.11.1
+[0m21:42:44.953642 [debug] [MainThread]: checksum: 30a8cc8fdcbf66701b0944d4ccce3fa46dd04b61e5df68b9f16d57b2e0e3f0be, vars: {}, profile: , target: , version: 1.11.11
+[0m21:42:45.068990 [info ] [MainThread]: Unable to do partial parsing because profile has changed
+[0m21:42:45.070012 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'e4a42785-924b-48c7-bb14-b74d73b7ca71', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e0e5c3d5d30>]}
+[0m21:42:46.773879 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'e4a42785-924b-48c7-bb14-b74d73b7ca71', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e0e5c6df290>]}
+[0m21:42:46.873829 [debug] [MainThread]: Wrote artifact WritableManifest to /home/nakovaamina3/dbt_project/target/manifest.json
+[0m21:42:46.877473 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/nakovaamina3/dbt_project/target/semantic_manifest.json
+[0m21:42:46.890353 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'e4a42785-924b-48c7-bb14-b74d73b7ca71', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e0e57d64f50>]}
+[0m21:42:46.891286 [info ] [MainThread]: Found 2 models, 549 macros
+[0m21:42:46.892172 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'e4a42785-924b-48c7-bb14-b74d73b7ca71', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e0e5c2aaf00>]}
+[0m21:42:46.896088 [info ] [MainThread]: 
+[0m21:42:46.897056 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m21:42:46.898173 [info ] [MainThread]: 
+[0m21:42:46.899724 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m21:42:46.906789 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_my-project-lab1-497719'
+[0m21:42:46.907755 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m21:42:48.221678 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_my-project-lab1-497719, now list_my-project-lab1-497719_dwh)
+[0m21:42:48.222981 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m21:42:48.402097 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'e4a42785-924b-48c7-bb14-b74d73b7ca71', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e0e5c31f8c0>]}
+[0m21:42:48.403157 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m21:42:48.407065 [debug] [Thread-1 (]: Began running node model.recommendations.popular_products
+[0m21:42:48.408036 [info ] [Thread-1 (]: 1 of 2 START sql table model dwh.popular_products .............................. [RUN]
+[0m21:42:48.408925 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_my-project-lab1-497719_dwh, now model.recommendations.popular_products)
+[0m21:42:48.409697 [debug] [Thread-1 (]: Began compiling node model.recommendations.popular_products
+[0m21:42:48.422588 [debug] [Thread-1 (]: Writing injected SQL for node "model.recommendations.popular_products"
+[0m21:42:48.423665 [debug] [Thread-1 (]: Began executing node model.recommendations.popular_products
+[0m21:42:48.483799 [debug] [Thread-1 (]: Writing runtime sql for node "model.recommendations.popular_products"
+[0m21:42:48.484960 [debug] [Thread-1 (]: On model.recommendations.popular_products: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "default", "target_name": "dev", "node_id": "model.recommendations.popular_products"} */
+
+  
+    
+
+    create or replace table `my-project-lab1-497719`.`dwh`.`popular_products`
+      
+    
+    
+
+    
+    OPTIONS()
+    as (
+      
+SELECT product_id, COUNT(*) as click_count
+FROM `my-project-lab1-497719.raw.clicks`
+GROUP BY product_id
+    );
+  
+[0m21:42:48.485840 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m21:42:48.883654 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=my-project-lab1-497719&j=bq:EU:543721d8-5140-4701-9cf6-f17b8a712daa&page=queryresults
+[0m21:42:48.884719 [error] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=my-project-lab1-497719&j=bq:EU:543721d8-5140-4701-9cf6-f17b8a712daa&page=queryresults
+[0m21:42:48.894690 [debug] [Thread-1 (]: Database Error in model popular_products (models/popular_products.sql)
+  Not found: Table my-project-lab1-497719:raw.clicks was not found in location EU
+  compiled code at target/run/recommendations/models/popular_products.sql
+[0m21:42:48.897344 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'e4a42785-924b-48c7-bb14-b74d73b7ca71', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e0e71bd51c0>]}
+[0m21:42:48.898479 [error] [Thread-1 (]: 1 of 2 ERROR creating sql table model dwh.popular_products ..................... [[31mERROR[0m in 0.49s]
+[0m21:42:48.899926 [debug] [Thread-1 (]: Finished running node model.recommendations.popular_products
+[0m21:42:48.901397 [debug] [Thread-4 (]: Marking all children of 'model.recommendations.popular_products' to be skipped because of status 'error'.  Reason: Database Error in model popular_products (models/popular_products.sql)
+  Not found: Table my-project-lab1-497719:raw.clicks was not found in location EU
+  compiled code at target/run/recommendations/models/popular_products.sql.
+[0m21:42:48.903916 [debug] [Thread-1 (]: Began running node model.recommendations.top_products
+[0m21:42:48.904850 [info ] [Thread-1 (]: 2 of 2 SKIP relation dwh.top_products .......................................... [[33mSKIP[0m]
+[0m21:42:48.906091 [debug] [Thread-1 (]: Finished running node model.recommendations.top_products
+[0m21:42:48.908612 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m21:42:48.909577 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m21:42:48.910044 [debug] [MainThread]: Connection 'model.recommendations.popular_products' was properly closed.
+[0m21:42:48.910681 [info ] [MainThread]: 
+[0m21:42:48.911326 [info ] [MainThread]: Finished running 2 table models in 0 hours 0 minutes and 2.01 seconds (2.01s).
+[0m21:42:48.912952 [debug] [MainThread]: Command end result
+[0m21:42:48.955769 [debug] [MainThread]: Wrote artifact WritableManifest to /home/nakovaamina3/dbt_project/target/manifest.json
+[0m21:42:48.958713 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/nakovaamina3/dbt_project/target/semantic_manifest.json
+[0m21:42:48.967366 [debug] [MainThread]: Wrote artifact RunExecutionResult to /home/nakovaamina3/dbt_project/target/run_results.json
+[0m21:42:48.967982 [info ] [MainThread]: 
+[0m21:42:48.968862 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m21:42:48.969848 [info ] [MainThread]: 
+[0m21:42:48.971058 [error] [MainThread]: [31mFailure in model popular_products (models/popular_products.sql)[0m
+[0m21:42:48.972289 [error] [MainThread]:   Database Error in model popular_products (models/popular_products.sql)
+  Not found: Table my-project-lab1-497719:raw.clicks was not found in location EU
+  compiled code at target/run/recommendations/models/popular_products.sql
+[0m21:42:48.973205 [info ] [MainThread]: 
+[0m21:42:48.974402 [info ] [MainThread]:   compiled code at target/compiled/recommendations/models/popular_products.sql
+[0m21:42:48.975381 [info ] [MainThread]: 
+[0m21:42:48.976506 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=1 NO-OP=0 TOTAL=2
+[0m21:42:48.978114 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 6.764871, "process_in_blocks": "0", "process_kernel_time": 0.623179, "process_mem_max_rss": "233132", "process_out_blocks": "3544", "process_user_time": 7.067246}
+[0m21:42:48.978959 [debug] [MainThread]: Command `dbt run` failed at 21:42:48.978814 after 6.77 seconds
+[0m21:42:48.979639 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e0e70da7410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e0e5c4a3860>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e0e711a2540>]}
+[0m21:42:48.980265 [debug] [MainThread]: Flushing usage events
+[0m21:42:49.418874 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m21:44:25.678386 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a6a3ebf4590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a6a409a8ce0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a6a3dc0f890>]}
+
+
+============================== 21:44:25.683364 | eb9bd0eb-8765-4bbc-80a2-171ed5dd5e32 ==============================
+[0m21:44:25.683364 [info ] [MainThread]: Running with dbt=1.11.11
+[0m21:44:25.684785 [debug] [MainThread]: running dbt with arguments {'cache_selected_only': 'False', 'no_print': 'None', 'debug': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'log_format': 'default', 'partial_parse': 'True', 'indirect_selection': 'eager', 'quiet': 'False', 'write_json': 'True', 'send_anonymous_usage_stats': 'True', 'fail_fast': 'False', 'log_cache_events': 'False', 'printer_width': '80', 'profiles_dir': '/home/nakovaamina3/.dbt', 'static_parser': 'True', 'introspect': 'True', 'use_colors': 'True', 'warn_error': 'None', 'version_check': 'True', 'empty': 'False', 'target_path': 'None', 'invocation_command': 'dbt run', 'log_path': '/home/nakovaamina3/dbt_project/logs', 'use_experimental_parser': 'False'}
+[0m21:44:27.979000 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'eb9bd0eb-8765-4bbc-80a2-171ed5dd5e32', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a6a25606090>]}
+[0m21:44:28.081584 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'eb9bd0eb-8765-4bbc-80a2-171ed5dd5e32', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a6a420d76e0>]}
+[0m21:44:28.082643 [info ] [MainThread]: Registered adapter: bigquery=1.11.1
+[0m21:44:28.285494 [debug] [MainThread]: checksum: 30a8cc8fdcbf66701b0944d4ccce3fa46dd04b61e5df68b9f16d57b2e0e3f0be, vars: {}, profile: , target: , version: 1.11.11
+[0m21:44:28.412680 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m21:44:28.413528 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m21:44:28.414009 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m21:44:28.451495 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'eb9bd0eb-8765-4bbc-80a2-171ed5dd5e32', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a6a2c11b830>]}
+[0m21:44:28.557720 [debug] [MainThread]: Wrote artifact WritableManifest to /home/nakovaamina3/dbt_project/target/manifest.json
+[0m21:44:28.560614 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/nakovaamina3/dbt_project/target/semantic_manifest.json
+[0m21:44:28.572687 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'eb9bd0eb-8765-4bbc-80a2-171ed5dd5e32', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a6a252db1d0>]}
+[0m21:44:28.573486 [info ] [MainThread]: Found 2 models, 549 macros
+[0m21:44:28.574309 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'eb9bd0eb-8765-4bbc-80a2-171ed5dd5e32', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a6a250ddd90>]}
+[0m21:44:28.577763 [info ] [MainThread]: 
+[0m21:44:28.578598 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m21:44:28.579623 [info ] [MainThread]: 
+[0m21:44:28.581082 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m21:44:28.587772 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_my-project-lab1-497719'
+[0m21:44:28.588706 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m21:44:29.856555 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_my-project-lab1-497719, now list_my-project-lab1-497719_dwh)
+[0m21:44:29.857802 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m21:44:30.046119 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'eb9bd0eb-8765-4bbc-80a2-171ed5dd5e32', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a6a40629bb0>]}
+[0m21:44:30.047337 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m21:44:30.055290 [debug] [Thread-1 (]: Began running node model.recommendations.popular_products
+[0m21:44:30.058702 [info ] [Thread-1 (]: 1 of 2 START sql table model dwh.popular_products .............................. [RUN]
+[0m21:44:30.060029 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_my-project-lab1-497719_dwh, now model.recommendations.popular_products)
+[0m21:44:30.061142 [debug] [Thread-1 (]: Began compiling node model.recommendations.popular_products
+[0m21:44:30.088518 [debug] [Thread-1 (]: Writing injected SQL for node "model.recommendations.popular_products"
+[0m21:44:30.089962 [debug] [Thread-1 (]: Began executing node model.recommendations.popular_products
+[0m21:44:30.175201 [debug] [Thread-1 (]: Writing runtime sql for node "model.recommendations.popular_products"
+[0m21:44:30.176494 [debug] [Thread-1 (]: On model.recommendations.popular_products: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "default", "target_name": "dev", "node_id": "model.recommendations.popular_products"} */
+
+  
+    
+
+    create or replace table `my-project-lab1-497719`.`dwh`.`popular_products`
+      
+    
+    
+
+    
+    OPTIONS()
+    as (
+      
+SELECT product_id, COUNT(*) as click_count
+FROM `my-project-lab1-497719.raw.clicks`
+GROUP BY product_id
+    );
+  
+[0m21:44:30.177294 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m21:44:30.700307 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=my-project-lab1-497719&j=bq:EU:312113e8-0dcd-4099-9f06-76cacda19761&page=queryresults
+[0m21:44:32.303801 [debug] [Thread-1 (]: SQL status: OK in 1.603 seconds
+[0m21:44:32.489144 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'eb9bd0eb-8765-4bbc-80a2-171ed5dd5e32', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a6a254ebe30>]}
+[0m21:44:32.490469 [info ] [Thread-1 (]: 1 of 2 OK created sql table model dwh.popular_products ......................... [[32mCREATE TABLE (0.0 rows, 0 processed)[0m in 2.43s]
+[0m21:44:32.491869 [debug] [Thread-1 (]: Finished running node model.recommendations.popular_products
+[0m21:44:32.493710 [debug] [Thread-1 (]: Began running node model.recommendations.top_products
+[0m21:44:32.494642 [info ] [Thread-1 (]: 2 of 2 START sql table model dwh.top_products .................................. [RUN]
+[0m21:44:32.496400 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.recommendations.popular_products, now model.recommendations.top_products)
+[0m21:44:32.497178 [debug] [Thread-1 (]: Began compiling node model.recommendations.top_products
+[0m21:44:32.504481 [debug] [Thread-1 (]: Writing injected SQL for node "model.recommendations.top_products"
+[0m21:44:32.505505 [debug] [Thread-1 (]: Began executing node model.recommendations.top_products
+[0m21:44:32.509178 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m21:44:32.686198 [debug] [Thread-1 (]: Writing runtime sql for node "model.recommendations.top_products"
+[0m21:44:32.687371 [debug] [Thread-1 (]: On model.recommendations.top_products: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "default", "target_name": "dev", "node_id": "model.recommendations.top_products"} */
+
+  
+    
+
+    create or replace table `my-project-lab1-497719`.`dwh`.`top_products`
+      
+    
+    
+
+    
+    OPTIONS()
+    as (
+      
+WITH clicks AS (
+  SELECT product_id, click_count 
+  FROM `my-project-lab1-497719`.`dwh`.`popular_products`
+),
+orders AS (
+  SELECT product_id, SUM(quantity) as total_orders 
+  FROM `my-project-lab1-497719.raw.orders` 
+  GROUP BY product_id
+)
+SELECT 
+  c.product_id, 
+  c.click_count*0.7 + COALESCE(o.total_orders,0)*0.3 as score
+FROM clicks c 
+LEFT JOIN orders o ON c.product_id = o.product_id
+ORDER BY score DESC 
+LIMIT 10
+    );
+  
+[0m21:44:33.126385 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=my-project-lab1-497719&j=bq:EU:99c82ca2-c6e0-4eb2-b890-e2a7b092d4d3&page=queryresults
+[0m21:44:34.715891 [debug] [Thread-1 (]: SQL status: OK in 1.589 seconds
+[0m21:44:34.879725 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'eb9bd0eb-8765-4bbc-80a2-171ed5dd5e32', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a6a254ebe30>]}
+[0m21:44:34.880970 [info ] [Thread-1 (]: 2 of 2 OK created sql table model dwh.top_products ............................. [[32mCREATE TABLE (0.0 rows, 0 processed)[0m in 2.38s]
+[0m21:44:34.882147 [debug] [Thread-1 (]: Finished running node model.recommendations.top_products
+[0m21:44:34.884930 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m21:44:34.885912 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m21:44:34.886480 [debug] [MainThread]: Connection 'model.recommendations.top_products' was properly closed.
+[0m21:44:34.887052 [info ] [MainThread]: 
+[0m21:44:34.887855 [info ] [MainThread]: Finished running 2 table models in 0 hours 0 minutes and 6.31 seconds (6.31s).
+[0m21:44:34.890430 [debug] [MainThread]: Command end result
+[0m21:44:34.932080 [debug] [MainThread]: Wrote artifact WritableManifest to /home/nakovaamina3/dbt_project/target/manifest.json
+[0m21:44:34.935026 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/nakovaamina3/dbt_project/target/semantic_manifest.json
+[0m21:44:34.943773 [debug] [MainThread]: Wrote artifact RunExecutionResult to /home/nakovaamina3/dbt_project/target/run_results.json
+[0m21:44:34.944456 [info ] [MainThread]: 
+[0m21:44:34.945351 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m21:44:34.946189 [info ] [MainThread]: 
+[0m21:44:34.947658 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=2
+[0m21:44:34.949449 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 9.361729, "process_in_blocks": "0", "process_kernel_time": 0.605786, "process_mem_max_rss": "233968", "process_out_blocks": "2416", "process_user_time": 5.487966}
+[0m21:44:34.950169 [debug] [MainThread]: Command `dbt run` succeeded at 21:44:34.950016 after 9.36 seconds
+[0m21:44:34.950850 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a6a3e8c8620>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a6a3db97ef0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a6a243cc260>]}
+[0m21:44:34.951619 [debug] [MainThread]: Flushing usage events
+[0m21:44:35.392191 [debug] [MainThread]: An error was encountered while trying to flush usage events
